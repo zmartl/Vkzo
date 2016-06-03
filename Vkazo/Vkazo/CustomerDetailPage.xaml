@@ -9,7 +9,7 @@
     <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
       <Image HeightRequest="200" WidthRequest="Infinity" Source="warning.png"></Image>
       <Label Text="{Binding Item.Title}"></Label>
-      <Label Text="{Binding Item.Description}"></Label>
+      <Label Text="{Binding Item.DescriptionLong}"></Label>
     </StackLayout>
   </ScrollView>
 </ContentPage>

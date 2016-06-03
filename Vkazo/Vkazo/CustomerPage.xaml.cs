@@ -17,12 +17,14 @@ namespace Vkazo
                 {
                     Title = AppResources.ZurichZoo,
                     Description = "Blablabla",
+                    DescriptionLong = "Blabsdfsdfdsfdsfsdfsdflabla",
                     Image = "warning.png"
                 },
                 new Customer
                 {
                     Title = "Volketswil, Obi",
                     Description = "Blablabla",
+                    DescriptionLong = "Blablablsadfsdfsdfsdfsdfsdfsdfsdfa",
                     Image = "warning.png"
                 }
             };
