@@ -60,5 +60,9 @@ C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\res\drawable-xxhdpi\warning.png
 C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\res\drawable\warning.png
 C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\R.cs.flag
 C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\uploadflags.txt
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\res\drawable-xxhdpi\zoo.png
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\res\drawable-hdpi\zoo.png
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\res\drawable-xhdpi\zoo.png
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\res\drawable\zoo.png
 C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\Vkazo.Droid.dll.mdb
 C:\Development\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Vkazo.Droid.dll.mdb

@@ -16,16 +16,30 @@ namespace Vkazo
                 new Customer
                 {
                     Title = AppResources.ZurichZoo,
-                    Description = "Blablabla",
-                    DescriptionLong = "Blabsdfsdfdsfdsfsdfsdflabla",
-                    Image = "warning.png"
+                    Description = AppResources.ZurichZooDescription,
+                    DescriptionLong = AppResources.ZurichZooDescription,
+                    Image = AppResources.ImageZurichZoo
                 },
                 new Customer
                 {
-                    Title = "Volketswil, Obi",
-                    Description = "Blablabla",
-                    DescriptionLong = "Blablablsadfsdfsdfsdfsdfsdfsdfsdfa",
-                    Image = "warning.png"
+                    Title = AppResources.HinwilBadi,
+                    Description = AppResources.HinwilBadiDescription,
+                    DescriptionLong = AppResources.HinwilBadiDescription,
+                    Image = AppResources.ImageHinwilBadi
+                },
+                new Customer
+                {
+                    Title = AppResources.LiveAtSunset,
+                    Description = AppResources.LiveAtSunsetDescription,
+                    DescriptionLong = AppResources.LiveAtSunsetDescription,
+                    Image = AppResources.ImageLiveAtSunset
+                },
+                new Customer
+                {
+                    Title = AppResources.HinwilRocKTheRing,
+                    Description = AppResources.HinwilRocKTheRingDescription,
+                    DescriptionLong = AppResources.HinwilRocKTheRingDescription,
+                    Image = AppResources.ImageRockTheRing
                 }
             };
         }

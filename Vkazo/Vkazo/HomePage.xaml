@@ -12,7 +12,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ImageCell ImageSource="{Binding Image}" Text="{Binding Title}" Detail="{Binding Description}"
-                               TextColor="Gray" DetailColor="{x:Static theme:Colors._50ShadesOfGrey}" />
+                               TextColor="Gray" DetailColor="{x:Static theme:Colors._50ShadesOfGrey}"  />
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

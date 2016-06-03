@@ -23,5 +23,6 @@ C:\Development\Vkazo\Vkazo\Vkazo\obj\Debug\Vkazo.Resources.AppResources.resource
 C:\Development\Vkazo\Vkazo\Vkazo\obj\Debug\Vkazo.csproj.GenerateResource.Cache
 C:\Development\Vkazo\Vkazo\Vkazo\obj\Debug\Vkazo.dll
 C:\Development\Vkazo\Vkazo\Vkazo\obj\Debug\Vkazo.pdb
+C:\Development\Vkazo\Vkazo\Vkazo\obj\Debug\Vkazo.csprojResolveAssemblyReference.cache
 C:\Development\Vkazo\Vkazo\Vkazo\obj\Debug\Vkazo.dll.mdb
 C:\Development\Vkazo\Vkazo\Vkazo\bin\Debug\Vkazo.dll.mdb

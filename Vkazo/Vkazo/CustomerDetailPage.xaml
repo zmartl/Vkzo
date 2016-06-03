@@ -2,14 +2,16 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:theme="clr-namespace:Vkazo.Theme;assembly=Vkazo"
+             xmlns:res="clr-namespace:Vkazo.Resources;assembly=Vkazo"
              x:Class="Vkazo.CustomerDetailPage"
-             Title="Test">
-  <ScrollView>
-    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
-      <Image HeightRequest="200" WidthRequest="Infinity" Source="warning.png"></Image>
-      <Label Text="{Binding Item.Title}"></Label>
-      <Label Text="{Binding Item.DescriptionLong}"></Label>
-    </StackLayout>
-  </ScrollView>
+             Title="{x:Static res:AppResources.ZurichZoo}">
+    <ScrollView>
+        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <Image Aspect="AspectFill" Source="{Binding Item.Image}" />
+            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" Padding="20, 10, 20, 20">
+                <Label Text="{Binding Item.Title}" FontSize="Large" HorizontalOptions="FillAndExpand" />
+                <Label Text="{Binding Item.DescriptionLong}" FontSize="Medium" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

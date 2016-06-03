@@ -62,11 +62,110 @@ namespace Vkazo.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Zürich, Zoo.
+        ///   Looks up a localized string similar to Hinwil Badi.
+        /// </summary>
+        internal static string HinwilBadi {
+            get {
+                return ResourceManager.GetString("HinwilBadi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ImEinsatz für die Badi Hinwil.
+        /// </summary>
+        internal static string HinwilBadiDescription {
+            get {
+                return ResourceManager.GetString("HinwilBadiDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hinwil Rock the Ring.
+        /// </summary>
+        internal static string HinwilRocKTheRing {
+            get {
+                return ResourceManager.GetString("HinwilRocKTheRing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die VKZO rockt den Ring.
+        /// </summary>
+        internal static string HinwilRocKTheRingDescription {
+            get {
+                return ResourceManager.GetString("HinwilRocKTheRingDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to badi.png.
+        /// </summary>
+        internal static string ImageHinwilBadi {
+            get {
+                return ResourceManager.GetString("ImageHinwilBadi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to liveatsunset.png.
+        /// </summary>
+        internal static string ImageLiveAtSunset {
+            get {
+                return ResourceManager.GetString("ImageLiveAtSunset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to rockthering.png.
+        /// </summary>
+        internal static string ImageRockTheRing {
+            get {
+                return ResourceManager.GetString("ImageRockTheRing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to zoo.png.
+        /// </summary>
+        internal static string ImageZurichZoo {
+            get {
+                return ResourceManager.GetString("ImageZurichZoo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Live at Sunset.
+        /// </summary>
+        internal static string LiveAtSunset {
+            get {
+                return ResourceManager.GetString("LiveAtSunset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vks beim Sunset in Zürich.
+        /// </summary>
+        internal static string LiveAtSunsetDescription {
+            get {
+                return ResourceManager.GetString("LiveAtSunsetDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zürich Zoo.
         /// </summary>
         internal static string ZurichZoo {
             get {
                 return ResourceManager.GetString("ZurichZoo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Einsatz beim Zürcher Zoo.
+        /// </summary>
+        internal static string ZurichZooDescription {
+            get {
+                return ResourceManager.GetString("ZurichZooDescription", resourceCulture);
             }
         }
     }
