@@ -10,6 +10,6 @@ namespace Vkazo.Theme
     public static class Colors
     {
 
-        public static Color _50ShadesOfGrey = Color.FromHex("FFA500");
+        public static Color Orange = Color.FromHex("FF5805");
     }
 }

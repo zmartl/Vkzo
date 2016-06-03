@@ -62,6 +62,24 @@ namespace Vkazo.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Verkehrksadetten Zürcher Oberland.
+        /// </summary>
+        internal static string AppTitle {
+            get {
+                return ResourceManager.GetString("AppTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Einsätze.
+        /// </summary>
+        internal static string Einsaetze {
+            get {
+                return ResourceManager.GetString("Einsaetze", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hinwil Badi.
         /// </summary>
         internal static string HinwilBadi {
@@ -148,6 +166,15 @@ namespace Vkazo.Resources {
         internal static string LiveAtSunsetDescription {
             get {
                 return ResourceManager.GetString("LiveAtSunsetDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unsere Einsätze.
+        /// </summary>
+        internal static string UnsereEinsaetze {
+            get {
+                return ResourceManager.GetString("UnsereEinsaetze", resourceCulture);
             }
         }
         

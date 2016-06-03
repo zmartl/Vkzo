@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Vkazo.Model;
+using Vkazo.Resources;
 using Xamarin.Forms;
 
 namespace Vkazo
@@ -15,8 +16,8 @@ namespace Vkazo
                 new Startscreen
                 {
                     Image = "warning.png",
-                    Title = "asdfdsaf",
-                    Description = "Description"
+                    Title = AppResources.Einsaetze,
+                    Description = AppResources.UnsereEinsaetze
                 },
                 new Startscreen
                 {
@@ -59,7 +60,7 @@ namespace Vkazo
 
             switch (item.Title)
             {
-                case "asdfdsaf":
+                case "Einsätze":
                     var customerPage = new CustomerPage();
                     Navigation.PushAsync(customerPage);
                     break;
