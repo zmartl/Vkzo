@@ -1,0 +1,64 @@
+\\zrh.local\dfsusr$\usrhome\u106586\visual studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\Vkazo.Droid.csprojResolveAssemblyReference.cache
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Vkazo.Droid.dll
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Vkazo.Droid.pdb
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Vkazo.Droid.apk
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Vkazo.Droid-Signed.apk
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\FormsViewGroup.dll
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Vkazo.dll
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Android.Support.Design.dll
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Android.Support.v7.MediaRouter.dll
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Forms.Core.dll
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Forms.Platform.dll
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Vkazo.pdb
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Forms.Core.xml
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\Vkazo.Droid.dll
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\Vkazo.Droid.pdb
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\android\bin\Vkazo.Droid.apk
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\res\drawable\icon.png
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\res\drawable-hdpi\icon.png
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\res\drawable-xhdpi\icon.png
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\R.cs.flag
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\uploadflags.txt
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\Vkazo.Droid.dll.mdb
+\\zrh.local\dfsusr$\usrhome\U106586\Visual Studio 2015\Projects\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Vkazo.Droid.dll.mdb
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Vkazo.Droid.dll
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Vkazo.Droid.pdb
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\ch.lucamarti.apk
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\ch.lucamarti-Signed.apk
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\FormsViewGroup.dll
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Vkazo.dll
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Android.Support.Design.dll
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Android.Support.v7.MediaRouter.dll
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Forms.Core.dll
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Vkazo.pdb
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Forms.Core.xml
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\Vkazo.Droid.csprojResolveAssemblyReference.cache
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\Vkazo.Droid.dll
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\Vkazo.Droid.pdb
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\android\bin\ch.lucamarti.apk
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\res\drawable\icon.png
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\res\drawable-hdpi\icon.png
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\res\drawable-xhdpi\icon.png
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\res\drawable-hdpi\warning.png
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\res\drawable-xhdpi\warning.png
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\res\drawable-xxhdpi\warning.png
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\res\drawable\warning.png
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\R.cs.flag
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\uploadflags.txt
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\obj\Debug\Vkazo.Droid.dll.mdb
+C:\Development\Vkazo\Vkazo\Vkazo.Droid\bin\Debug\Vkazo.Droid.dll.mdb

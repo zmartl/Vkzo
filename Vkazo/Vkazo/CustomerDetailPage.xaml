@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:theme="clr-namespace:Vkazo.Theme;assembly=Vkazo"
+             x:Class="Vkazo.CustomerDetailPage"
+             Title="Test">
+  <ScrollView>
+    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+      <Image HeightRequest="200" WidthRequest="Infinity" Source="warning.png"></Image>
+      <Label Text="{Binding Item.Title}"></Label>
+      <Label Text="{Binding Item.Description}"></Label>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>
