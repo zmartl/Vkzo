@@ -62,7 +62,7 @@ namespace Vkazo.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verkehrksadetten Zürcher Oberland.
+        ///   Looks up a localized string similar to VKAZO.
         /// </summary>
         internal static string AppTitle {
             get {
@@ -89,7 +89,7 @@ namespace Vkazo.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ImEinsatz für die Badi Hinwil.
+        ///   Looks up a localized string similar to Im Einsatz für die Badi Hinwil.
         /// </summary>
         internal static string HinwilBadiDescription {
             get {

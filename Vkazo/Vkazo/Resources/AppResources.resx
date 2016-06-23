@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppTitle" xml:space="preserve">
-    <value>Verkehrksadetten Zürcher Oberland</value>
+    <value>VKAZO</value>
   </data>
   <data name="Einsaetze" xml:space="preserve">
     <value>Einsätze</value>
@@ -127,7 +127,7 @@
     <value>Hinwil Badi</value>
   </data>
   <data name="HinwilBadiDescription" xml:space="preserve">
-    <value>ImEinsatz für die Badi Hinwil</value>
+    <value>Im Einsatz für die Badi Hinwil</value>
   </data>
   <data name="HinwilRocKTheRing" xml:space="preserve">
     <value>Hinwil Rock the Ring</value>

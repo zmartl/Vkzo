@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Net.Http.Headers;
+
+using Vkazo.Resources;
 
 using Xamarin.Forms;
 
@@ -12,7 +11,14 @@ namespace Vkazo
         public App()
         {
             // The root page of your application
-            MainPage = new NavigationPage(new HomePage());
+            MainPage = new MasterDetailPage {
+                Master = new NavPage() {
+                    Title = "Menu",
+                    Icon = "burger.png",
+                    
+                }, 
+                Detail = new NavigationPage(new HomePage())
+            };
         }
 
         protected override void OnStart()
