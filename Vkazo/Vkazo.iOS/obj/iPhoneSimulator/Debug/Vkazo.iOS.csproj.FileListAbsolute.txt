@@ -75,5 +75,14 @@ C:\Development\Vkzo\Vkazo\Vkazo.iOS\obj\iPhoneSimulator\Debug\VkazoiOS.pdb
 C:\Development\Vkzo\Vkazo\Vkazo.iOS\obj\iPhoneSimulator\Debug\optimized\burger@2x.png
 C:\Development\Vkzo\Vkazo\Vkazo.iOS\obj\iPhoneSimulator\Debug\optimized\burger@3x.png
 C:\Development\Vkzo\Vkazo\Vkazo.iOS\obj\iPhoneSimulator\Debug\optimized\burger.png
+C:\Development\Vkzo\Vkazo\Vkazo.iOS\obj\iPhoneSimulator\Debug\optimized\education.png
+C:\Development\Vkzo\Vkazo\Vkazo.iOS\obj\iPhoneSimulator\Debug\optimized\education@2x.png
+C:\Development\Vkzo\Vkazo\Vkazo.iOS\obj\iPhoneSimulator\Debug\optimized\education@3x.png
+C:\Development\Vkzo\Vkazo\Vkazo.iOS\obj\iPhoneSimulator\Debug\optimized\contact@2x.png
+C:\Development\Vkzo\Vkazo\Vkazo.iOS\obj\iPhoneSimulator\Debug\optimized\contact@3x.png
+C:\Development\Vkzo\Vkazo\Vkazo.iOS\obj\iPhoneSimulator\Debug\optimized\contact.png
+C:\Development\Vkzo\Vkazo\Vkazo.iOS\obj\iPhoneSimulator\Debug\optimized\association@2x.png
+C:\Development\Vkzo\Vkazo\Vkazo.iOS\obj\iPhoneSimulator\Debug\optimized\association@3x.png
+C:\Development\Vkzo\Vkazo\Vkazo.iOS\obj\iPhoneSimulator\Debug\optimized\association.png
 C:\Development\Vkzo\Vkazo\Vkazo.iOS\obj\iPhoneSimulator\Debug\VkazoiOS.exe.mdb
 C:\Development\Vkzo\Vkazo\Vkazo.iOS\bin\iPhoneSimulator\Debug\VkazoiOS.exe.mdb

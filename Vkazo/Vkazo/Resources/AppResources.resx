@@ -120,6 +120,15 @@
   <data name="AppTitle" xml:space="preserve">
     <value>VKAZO</value>
   </data>
+  <data name="Association" xml:space="preserve">
+    <value>Verband</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="Education" xml:space="preserve">
+    <value>Ausbildung</value>
+  </data>
   <data name="Einsaetze" xml:space="preserve">
     <value>Einsätze</value>
   </data>
