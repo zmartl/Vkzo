@@ -50,6 +50,7 @@ namespace Vkazo
                     Description = "Description"
                 }
             };
+            MainListView.Footer = string.Empty;
         }
 
         public void OnSelection(object sender, SelectedItemChangedEventArgs e)

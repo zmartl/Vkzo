@@ -16,6 +16,11 @@
                                TextColor="Gray" DetailColor="{x:Static theme:Colors.Orange}"  />
                 </DataTemplate>
             </ListView.ItemTemplate>
+          <ListView.FooterTemplate>
+            <DataTemplate>
+              <BoxView HeightRequest="1" WidthRequest="1" BackgroundColor="Transparent" />
+            </DataTemplate>
+          </ListView.FooterTemplate>
         </ListView>
     </StackLayout>
 </ContentPage>

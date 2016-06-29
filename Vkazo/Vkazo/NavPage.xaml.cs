@@ -9,6 +9,8 @@ namespace Vkazo
 {
     public partial class NavPage : ContentPage
     {
+        public ListView ListView => NavListView;
+
         public NavPage()
         {
             InitializeComponent();
@@ -21,24 +23,5 @@ namespace Vkazo
             };
         }
 
-        public void OnSelection(object sender, SelectedItemChangedEventArgs e)
-        {
-            if (e.SelectedItem == null)
-                return;
-            var item = (Startscreen) e.SelectedItem;
-
-            switch (item.Title)
-            {
-                case "Einsätze":
-                    var customerPage = new CustomerPage();
-                     
-                    MessagingCenter.Send(this, App.MESSAGE_NAVIGATE, item.Title);
-                    break;
-                default:
-                    DisplayAlert("Error", "En error occured", "Ok");
-                    break;
-            }
-            ((ListView) sender).SelectedItem = null;
-        }
     }
 }
