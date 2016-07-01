@@ -8,19 +8,12 @@
              Title="{x:Static res:AppResources.AppTitle}">
     <StackLayout Orientation="Vertical" Spacing="0" VerticalOptions="FillAndExpand" Padding="20, 10, 20, 20">
         <Image x:Name="Logo" Source="warning.png" HeightRequest="200" WidthRequest="Infinity" />
-        <ListView x:Name="MainListView"
-                  HasUnevenRows="True" ItemSelected="OnSelection">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ImageCell ImageSource="{Binding Image}" Text="{Binding Title}" Detail="{Binding Description}"
-                               TextColor="Gray" DetailColor="{x:Static theme:Colors.Orange}"  />
-                </DataTemplate>
-            </ListView.ItemTemplate>
-          <ListView.FooterTemplate>
-            <DataTemplate>
-              <BoxView HeightRequest="1" WidthRequest="1" BackgroundColor="Transparent" />
-            </DataTemplate>
-          </ListView.FooterTemplate>
-        </ListView>
+        <ListView x:Name="MainListView" ItemsSource="{Binding ProgramList}" HasUnevenRows="True" ItemSelected="OnSelection">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<TextCell Text="{Binding Date}" Detail="{Binding Title}" />
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
     </StackLayout>
 </ContentPage>

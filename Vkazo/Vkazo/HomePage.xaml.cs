@@ -1,75 +1,100 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Runtime.CompilerServices;
+
+using Newtonsoft.Json;
+
+using PCLStorage;
+
+using Plugin.Connectivity;
+
 using Vkazo.Model;
-using Vkazo.Resources;
+
 using Xamarin.Forms;
 
 namespace Vkazo
 {
-    public partial class HomePage : ContentPage
+    public partial class HomePage : ContentPage, INotifyPropertyChanged
     {
+        private const string FOLDERNAME = "Vkazo";
+        private const string FILENAME = "Vkzo.txt";
+        private IFile _localFile;
+        private IFolder _localFolder;
+        private ObservableCollection<Program> _programList;
+
+        public ObservableCollection<Program> ProgramList
+        {
+            get { return _programList; }
+            set
+            {
+                _programList = value;
+                RaisePropertyChanged();
+            }
+        }
+
         public HomePage()
         {
             InitializeComponent();
-
-            MainListView.ItemsSource = new List<Startscreen>
-            {
-                new Startscreen
-                {
-                    Image = "warning.png",
-                    Title = AppResources.Einsaetze,
-                    Description = AppResources.UnsereEinsaetze
-                },
-                new Startscreen
-                {
-                    Image = "warning.png",
-                    Title = "Tiasdfsdftle",
-                    Description = "Description"
-                },
-                new Startscreen
-                {
-                    Image = "warning.png",
-                    Title = "sadf",
-                    Description = "Description"
-                },
-                new Startscreen
-                {
-                    Image = "warning.png",
-                    Title = "wer",
-                    Description = "Description"
-                },
-                new Startscreen
-                {
-                    Image = "warning.png",
-                    Title = "weqr",
-                    Description = "Description"
-                },
-                new Startscreen
-                {
-                    Image = "warning.png",
-                    Title = "qwer",
-                    Description = "Description"
-                }
-            };
+            BindingContext = this;
+            ProgramList = new ObservableCollection<Program>();
             MainListView.Footer = string.Empty;
         }
 
-        public void OnSelection(object sender, SelectedItemChangedEventArgs e)
-        {
-            if (e.SelectedItem == null)
-                return;
-            var item = (Startscreen) e.SelectedItem;
+        #region Overrides of Page
 
-            switch (item.Title)
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+            var result = "";
+            var rootFolder = FileSystem.Current.LocalStorage;
+
+
+            //remove ! if not behind proxy
+            if (CrossConnectivity.Current.IsConnected)
             {
-                case "Einsätze":
-                    var customerPage = new CustomerPage();
-                    Navigation.PushAsync(customerPage);
-                    break;
-                default:
-                    DisplayAlert("Error", "En error occured", "Ok");
-                    break;
+                //const string URL = "https://luca-marti.ch/app/program.json";
+
+                //var client = new HttpClient();
+
+                //result = await client.GetStringAsync(URL);
+                var folder = await rootFolder.CreateFolderAsync(FOLDERNAME, CreationCollisionOption.OpenIfExists);
+
+                var file = await folder.CreateFileAsync(FILENAME, CreationCollisionOption.ReplaceExisting);
+
+                // Behind proxy
+                result = "[{\"Date\": \"01.07.2016\", \"Title\": \"Hauptsitz Flughafen ZÃ¼rich AG\",},  {\"Date\": \"02.07.2016\",\"Title\": \"Hauptsitz Flughafen ZÃ¼rich AG\",},{\"Date\": \"03.07.2016\",\"Title\": \"ZÃ¼rich Zoo\",}]";
+
+                await file.WriteAllTextAsync(result);
             }
+            else
+            {
+                _localFolder = await rootFolder.GetFolderAsync(FOLDERNAME);
+                _localFile = await _localFolder.GetFileAsync(FILENAME);
+                result = await _localFile.ReadAllTextAsync();
+            }
+            Debug.WriteLine(result);
+            ProgramList = new ObservableCollection<Program>(JsonConvert.DeserializeObject<IEnumerable<Program>>(result));
+        }
+
+        #endregion
+
+        private void OnSelection(object sender, SelectedItemChangedEventArgs e)
+        {
             ((ListView) sender).SelectedItem = null;
         }
+
+        #region INotifyPropertyChanged
+
+        public new event PropertyChangedEventHandler PropertyChanged = delegate { };
+
+        private void RaisePropertyChanged([CallerMemberName] string propertyName = "")
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        #endregion
     }
 }
