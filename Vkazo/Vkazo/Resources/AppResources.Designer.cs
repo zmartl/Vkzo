@@ -197,6 +197,15 @@ namespace Vkazo.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Verein.
+        /// </summary>
+        internal static string Organisations {
+            get {
+                return ResourceManager.GetString("Organisations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Unsere Einsätze.
         /// </summary>
         internal static string UnsereEinsaetze {

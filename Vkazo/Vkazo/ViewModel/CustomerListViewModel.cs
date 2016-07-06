@@ -1,41 +1,37 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections.ObjectModel;
+
 using Vkazo.Model;
 using Vkazo.Resources;
+
 using Xamarin.Forms;
 
-namespace Vkazo
+namespace Vkazo.ViewModel
 {
-    public partial class CustomerPage : ContentPage
+    public class CustomerListViewModel : AbstractListViewModel<Customer>
     {
-        public CustomerPage()
+        public CustomerListViewModel()
         {
-            InitializeComponent();
-
-            CustomerListView.ItemsSource = new List<Customer>
-            {
-                new Customer
-                {
+            Title = AppResources.UnsereEinsaetze;
+            Items = new ObservableCollection<Customer> {
+                new Customer {
                     Title = AppResources.ZurichZoo,
                     Description = AppResources.ZurichZooDescription,
                     DescriptionLong = AppResources.ZurichZooDescription,
                     Image = AppResources.ImageZurichZoo
                 },
-                new Customer
-                {
+                new Customer {
                     Title = AppResources.HinwilBadi,
                     Description = AppResources.HinwilBadiDescription,
                     DescriptionLong = AppResources.HinwilBadiDescription,
                     Image = AppResources.ImageHinwilBadi
                 },
-                new Customer
-                {
+                new Customer {
                     Title = AppResources.LiveAtSunset,
                     Description = AppResources.LiveAtSunsetDescription,
                     DescriptionLong = AppResources.LiveAtSunsetDescription,
                     Image = AppResources.ImageLiveAtSunset
                 },
-                new Customer
-                {
+                new Customer {
                     Title = AppResources.HinwilRocKTheRing,
                     Description = AppResources.HinwilRocKTheRingDescription,
                     DescriptionLong = AppResources.HinwilRocKTheRingDescription,
@@ -44,16 +40,14 @@ namespace Vkazo
             };
         }
 
-        public void OnSelection(object sender, SelectedItemChangedEventArgs e)
+        #region Overrides of AbstractListViewModel<Customer>
+
+        public override void OnSelectedItem(Customer item, INavigation navigation)
         {
-            if (e.SelectedItem == null)
-                return;
-            var detailPage = new CustomerDetailPage
-            {
-                Item = (Customer)e.SelectedItem
-            };
-            Navigation.PushAsync(detailPage);
-            ((ListView)sender).SelectedItem = null;
+            var detailPage = new CustomerDetailPage {Item = item};
+            navigation.PushAsync(detailPage);
         }
+
+        #endregion
     }
 }

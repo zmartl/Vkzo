@@ -55,17 +55,22 @@ namespace Vkazo
             //remove ! if not behind proxy
             if (CrossConnectivity.Current.IsConnected)
             {
+                // Uncomment when not behind proxy
                 //const string URL = "https://luca-marti.ch/app/program.json";
-
                 //var client = new HttpClient();
-
                 //result = await client.GetStringAsync(URL);
+
                 var folder = await rootFolder.CreateFolderAsync(FOLDERNAME, CreationCollisionOption.OpenIfExists);
 
                 var file = await folder.CreateFileAsync(FILENAME, CreationCollisionOption.ReplaceExisting);
 
-                // Behind proxy
+                // Uncomment when behind proxy
                 result = "[{\"Date\": \"01.07.2016\", \"Title\": \"Hauptsitz Flughafen ZÃ¼rich AG\",},  {\"Date\": \"02.07.2016\",\"Title\": \"Hauptsitz Flughafen ZÃ¼rich AG\",},{\"Date\": \"03.07.2016\",\"Title\": \"ZÃ¼rich Zoo\",}]";
+
+                if (result == "")
+                {
+                    result = "[{\"Date\": \"Keine Daten vorhanden\"}]";
+                }
 
                 await file.WriteAllTextAsync(result);
             }
@@ -75,7 +80,6 @@ namespace Vkazo
                 _localFile = await _localFolder.GetFileAsync(FILENAME);
                 result = await _localFile.ReadAllTextAsync();
             }
-            Debug.WriteLine(result);
             ProgramList = new ObservableCollection<Program>(JsonConvert.DeserializeObject<IEnumerable<Program>>(result));
         }
 

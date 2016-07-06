@@ -4,10 +4,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:theme="clr-namespace:Vkazo.Theme;assembly=Vkazo"
              xmlns:res="clr-namespace:Vkazo.Resources;assembly=Vkazo"
-             x:Class="Vkazo.CustomerPage"
-             Title="{x:Static res:AppResources.UnsereEinsaetze}">
+             x:Class="Vkazo.ImageDetailPage"
+             Title="{Binding Title}">
   <ListView x:Name="CustomerListView"
-            HasUnevenRows="True" ItemSelected="OnSelection">
+            HasUnevenRows="True" ItemSelected="OnSelection" ItemsSource="{Binding Items}">
     <ListView.ItemTemplate>
       <DataTemplate>
         <ImageCell ImageSource="{Binding Image}" Text="{Binding Title}" Detail="{Binding Description}"

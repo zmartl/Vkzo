@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Vkazo.Model;
+using Vkazo.ViewModel;
 
 using Xamarin.Forms;
 
@@ -17,9 +18,10 @@ namespace Vkazo
             InitializeComponent();
 
             NavPage.ListView.ItemSelected += NavListViewOnItemSelected;
+            NavPage.ListView.Footer = string.Empty;
         }
 
-        private void NavListViewOnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void NavListViewOnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             if (e.SelectedItem == null)
                 return;
@@ -28,10 +30,13 @@ namespace Vkazo
             switch (item.Title)
             {
                 case "Einsätze":
-                    PushAsync(new CustomerPage());
+                    await PushAsync(new ImageDetailPage { BindingContext = new CustomerListViewModel() });
+                    break;
+                case "Verband":
+                    await PushAsync(new ImageDetailPage { BindingContext = new AssociationListViewModel() });
                     break;
                 default:
-                    DisplayAlert("Error", "En error occured", "Ok");
+                    await DisplayAlert("Error", "En error occured", "Ok");
                     break;
             }
             ((ListView)sender).SelectedItem = null;
