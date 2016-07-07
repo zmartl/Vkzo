@@ -19,7 +19,7 @@ namespace Vkazo
     public partial class HomePage : ContentPage, INotifyPropertyChanged
     {
         private const string FOLDERNAME = "Vkazo";
-        private const string FILENAME = "Vkzo.txt";
+        private const string FILENAME = "VkzoHomePage.txt";
         private IFile _localFile;
         private IFolder _localFolder;
         private ObservableCollection<Program> _programList;
@@ -56,7 +56,7 @@ namespace Vkazo
             if (CrossConnectivity.Current.IsConnected)
             {
                 // Uncomment when not behind proxy
-                //const string URL = "https://luca-marti.ch/app/program.json";
+                //const string URL = "https://luca-marti.ch/app/program.php";
                 //var client = new HttpClient();
                 //result = await client.GetStringAsync(URL);
 
@@ -78,7 +78,14 @@ namespace Vkazo
             {
                 _localFolder = await rootFolder.GetFolderAsync(FOLDERNAME);
                 _localFile = await _localFolder.GetFileAsync(FILENAME);
-                result = await _localFile.ReadAllTextAsync();
+                //result = await _localFile.ReadAllTextAsync();
+
+                if (result == "")
+                {
+                    await DisplayAlert("Keine Netzwerkverbindung", "Die Daten konnten nicht geladen werden", "Ok");
+                    result = "[{\"Date\": \"Die Daten konten nicht geladen werden\"}]";
+                }
+
             }
             ProgramList = new ObservableCollection<Program>(JsonConvert.DeserializeObject<IEnumerable<Program>>(result));
         }
