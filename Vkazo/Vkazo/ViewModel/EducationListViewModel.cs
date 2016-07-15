@@ -35,15 +35,15 @@ namespace Vkazo.ViewModel
             switch (item.Title)
             {
                 case "Materialkunde":
-                    var infoPage = new ImageDetailPage { BindingContext = new MaterialListViewModel() };
+                    var infoPage = new Pages.ImageDetailPage { BindingContext = new MaterialListViewModel() };
                     navigation.PushAsync(infoPage);
                     break;
                 case "Vereinskunde":
-                    var organisationPage = new ImageDetailPage() { BindingContext = new OrganisationLessonListViewModel() };
+                    var organisationPage = new Pages.ImageDetailPage() { BindingContext = new OrganisationLessonListViewModel() };
                     navigation.PushAsync(organisationPage);
                     break;
                 case "Ränge":
-                    var gradePage = new ImageDetailPage() { BindingContext = new GradeLessonListViewModel() };
+                    var gradePage = new Pages.ImageDetailPage() { BindingContext = new GradeLessonListViewModel() };
                     navigation.PushAsync(gradePage);
                     break;
             }

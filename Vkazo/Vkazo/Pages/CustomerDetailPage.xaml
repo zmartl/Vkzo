@@ -3,7 +3,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:res="clr-namespace:Vkazo.Resources;assembly=Vkazo"
-             x:Class="Vkazo.CustomerDetailPage"
+             x:Class="Vkazo.Pages.CustomerDetailPage"
              Title="{Binding Item.Title}">
     <ScrollView>
         <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">

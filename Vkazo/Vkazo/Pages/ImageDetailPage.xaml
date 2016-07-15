@@ -4,7 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:theme="clr-namespace:Vkazo.Theme;assembly=Vkazo"
              xmlns:res="clr-namespace:Vkazo.Resources;assembly=Vkazo"
-             x:Class="Vkazo.ImageDetailPage"
+             x:Class="Vkazo.Pages.ImageDetailPage"
              Title="{Binding Title}">
   <ListView x:Name="CustomerListView"
             HasUnevenRows="True" ItemSelected="OnSelection" ItemsSource="{Binding Items}">

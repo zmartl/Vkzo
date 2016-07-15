@@ -2,7 +2,7 @@
 
 using Xamarin.Forms;
 
-namespace Vkazo
+namespace Vkazo.Pages
 {
     public partial class CustomerDetailPage : ContentPage
     {

@@ -12,7 +12,7 @@ namespace Vkazo
         public App()
         {
             // The root page of your application
-            MainPage = new MasterPage();
+            MainPage = new Pages.MasterPage();
         }
 
         protected override void OnStart()

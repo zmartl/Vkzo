@@ -5,7 +5,7 @@ using Vkazo.ViewModel;
 
 using Xamarin.Forms;
 
-namespace Vkazo
+namespace Vkazo.Pages
 {
     public partial class MasterPage : MasterDetailPage
     {
@@ -26,13 +26,13 @@ namespace Vkazo
             switch (item.Title)
             {
                 case "Einsätze":
-                    await PushAsync(new ImageDetailPage {BindingContext = new CustomerListViewModel()});
+                    await PushAsync(new Pages.ImageDetailPage {BindingContext = new CustomerListViewModel()});
                     break;
                 case "Verband":
-                    await PushAsync(new ImageDetailPage {BindingContext = new AssociationListViewModel()});
+                    await PushAsync(new Pages.ImageDetailPage {BindingContext = new AssociationListViewModel()});
                     break;
                 case "Ausbildung":
-                    await PushAsync(new ImageDetailPage { BindingContext = new EducationListViewModel() });
+                    await PushAsync(new Pages.ImageDetailPage { BindingContext = new EducationListViewModel() });
                     break;
                 default:
                     await DisplayAlert("Error", "En error occured", "Ok");

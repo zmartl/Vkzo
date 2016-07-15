@@ -26,11 +26,11 @@ namespace Vkazo.ViewModel
             switch (item.Title)
             {
                 case "Allgemein":
-                    var infoPage = new ImageDetailPage { BindingContext = new AssociationInfoListViewModel() };
+                    var infoPage = new Pages.ImageDetailPage { BindingContext = new AssociationInfoListViewModel() };
                     navigation.PushAsync(infoPage);
                     break;
                 case "Vereine":
-                    var organisationPage = new ImageDetailPage {BindingContext = new OrganisationListViewModel()};
+                    var organisationPage = new Pages.ImageDetailPage {BindingContext = new OrganisationListViewModel()};
                     navigation.PushAsync(organisationPage);
                     break;
                 

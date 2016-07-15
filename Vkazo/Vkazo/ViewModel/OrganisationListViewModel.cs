@@ -41,7 +41,7 @@ namespace Vkazo.ViewModel
 
         public override void OnSelectedItem(Organisation item, INavigation navigation)
         {
-            var organisationDetailPage = new OrganisationDetailPage {Item = item};
+            var organisationDetailPage = new Pages.OrganisationDetailPage {Item = item};
             navigation.PushAsync(organisationDetailPage);
         }
 
