@@ -107,6 +107,60 @@ namespace Vkazo.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Email.
+        /// </summary>
+        internal static string Email {
+            get {
+                return ResourceManager.GetString("Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gründer.
+        /// </summary>
+        internal static string Founder {
+            get {
+                return ResourceManager.GetString("Founder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gegründet.
+        /// </summary>
+        internal static string FoundingYear {
+            get {
+                return ResourceManager.GetString("FoundingYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Allgemein.
+        /// </summary>
+        internal static string General {
+            get {
+                return ResourceManager.GetString("General", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ränge.
+        /// </summary>
+        internal static string GradeLesson {
+            get {
+                return ResourceManager.GetString("GradeLesson", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unsere Ränge.
+        /// </summary>
+        internal static string GradeLessonDescription {
+            get {
+                return ResourceManager.GetString("GradeLessonDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hinwil Badi.
         /// </summary>
         internal static string HinwilBadi {
@@ -197,6 +251,42 @@ namespace Vkazo.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Materialkunde.
+        /// </summary>
+        internal static string MaterialLesson {
+            get {
+                return ResourceManager.GetString("MaterialLesson", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unsere Materialien beim Einsatz.
+        /// </summary>
+        internal static string MaterialLessonDescription {
+            get {
+                return ResourceManager.GetString("MaterialLessonDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vereinskunde.
+        /// </summary>
+        internal static string OrganisationLesson {
+            get {
+                return ResourceManager.GetString("OrganisationLesson", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Alles über unseren Verein.
+        /// </summary>
+        internal static string OrganisationLessonDescription {
+            get {
+                return ResourceManager.GetString("OrganisationLessonDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Verein.
         /// </summary>
         internal static string Organisations {
@@ -206,11 +296,29 @@ namespace Vkazo.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Telefonnummer.
+        /// </summary>
+        internal static string Telephone {
+            get {
+                return ResourceManager.GetString("Telephone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Unsere Einsätze.
         /// </summary>
         internal static string UnsereEinsaetze {
             get {
                 return ResourceManager.GetString("UnsereEinsaetze", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fahrzeugname.
+        /// </summary>
+        internal static string VehicleName {
+            get {
+                return ResourceManager.GetString("VehicleName", resourceCulture);
             }
         }
         

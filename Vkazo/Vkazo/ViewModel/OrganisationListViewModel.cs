@@ -2,6 +2,7 @@
 
 using Vkazo.Model;
 using Vkazo.Resources;
+using Vkazo.Resources.Organisations;
 
 using Xamarin.Forms;
 
@@ -14,13 +15,24 @@ namespace Vkazo.ViewModel
             Title = AppResources.Organisations;
             Items = new ObservableCollection<Organisation> {
                 new Organisation {
-                    Title = "VKAZO", 
-                    Description = "Verkehrkadetten Zürcher Oberland",
-                    Image = "organisation.png"
-                }, new Organisation {
-                    Title = "VKAZU",
-                    Description = "Verkehrkadetten Zürcher Unterland",
-                    Image = "organisation.png"
+                    Title = ResVkazo.Short,
+                    Description = ResVkazo.Long,
+                    Image = ResVkazo.Image,
+                    Founder = ResVkazo.Founder,
+                    FoundingYear = ResVkazo.FoundingYear,
+                    VehicleName = ResVkazo.VehicleName,
+                    Email = ResVkazo.Email,
+                    Telephone = ResVkazo.Telephonenumer
+                },
+                new Organisation {
+                    Title = ResVkazu.Short,
+                    Description = ResVkazu.Long,
+                    Image = ResVkazu.Image,
+                    Founder = ResVkazu.Founder,
+                    FoundingYear = ResVkazu.FoundingYear,
+                    VehicleName = ResVkazu.VehicleName,
+                    Email = ResVkazu.Email,
+                    Telephone = ResVkazu.Telephonenumer
                 }
             };
         }
@@ -29,7 +41,7 @@ namespace Vkazo.ViewModel
 
         public override void OnSelectedItem(Organisation item, INavigation navigation)
         {
-            var organisationDetailPage = new OrganisationDetailPage { Item = item };
+            var organisationDetailPage = new OrganisationDetailPage {Item = item};
             navigation.PushAsync(organisationDetailPage);
         }
 

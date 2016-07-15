@@ -117,97 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AppTitle" xml:space="preserve">
-    <value>VKAZO</value>
-  </data>
-  <data name="Association" xml:space="preserve">
-    <value>Verband</value>
-  </data>
-  <data name="Contact" xml:space="preserve">
-    <value>Kontakt</value>
-  </data>
-  <data name="Education" xml:space="preserve">
-    <value>Ausbildung</value>
-  </data>
-  <data name="Einsaetze" xml:space="preserve">
-    <value>Einsätze</value>
-  </data>
-  <data name="HinwilBadi" xml:space="preserve">
-    <value>Hinwil Badi</value>
-  </data>
-  <data name="HinwilBadiDescription" xml:space="preserve">
-    <value>Im Einsatz für die Badi Hinwil</value>
-  </data>
-  <data name="HinwilRocKTheRing" xml:space="preserve">
-    <value>Hinwil Rock the Ring</value>
-  </data>
-  <data name="HinwilRocKTheRingDescription" xml:space="preserve">
-    <value>Die VKZO rockt den Ring</value>
-  </data>
-  <data name="ImageHinwilBadi" xml:space="preserve">
-    <value>badi.png</value>
-  </data>
-  <data name="ImageLiveAtSunset" xml:space="preserve">
-    <value>liveatsunset.png</value>
-  </data>
-  <data name="ImageRockTheRing" xml:space="preserve">
-    <value>rockthering.png</value>
-  </data>
-  <data name="ImageZurichZoo" xml:space="preserve">
-    <value>zoo.png</value>
-  </data>
-  <data name="LiveAtSunset" xml:space="preserve">
-    <value>Live at Sunset</value>
-  </data>
-  <data name="LiveAtSunsetDescription" xml:space="preserve">
-    <value>Vks beim Sunset in Zürich</value>
-  </data>
-  <data name="UnsereEinsaetze" xml:space="preserve">
-    <value>Unsere Einsätze</value>
-  </data>
-  <data name="ZurichZoo" xml:space="preserve">
-    <value>Zürich Zoo</value>
-  </data>
-  <data name="ZurichZooDescription" xml:space="preserve">
-    <value>Einsatz beim Zürcher Zoo</value>
-  </data>
-  <data name="Organisations" xml:space="preserve">
-    <value>Verein</value>
+  <data name="Email" xml:space="preserve">
+    <value>N/A</value>
   </data>
   <data name="Founder" xml:space="preserve">
-    <value>Gründer</value>
+    <value>N/A</value>
   </data>
   <data name="FoundingYear" xml:space="preserve">
-    <value>Gegründet</value>
+    <value>N/A</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>organisation.png</value>
+  </data>
+  <data name="Long" xml:space="preserve">
+    <value>Verkehrskadetten Zürcher Unterland</value>
+  </data>
+  <data name="Short" xml:space="preserve">
+    <value>VKAZU</value>
+  </data>
+  <data name="Telephonenumer" xml:space="preserve">
+    <value>N/A</value>
   </data>
   <data name="VehicleName" xml:space="preserve">
-    <value>Fahrzeugname</value>
-  </data>
-  <data name="Email" xml:space="preserve">
-    <value>Email</value>
-  </data>
-  <data name="Telephone" xml:space="preserve">
-    <value>Telefonnummer</value>
-  </data>
-  <data name="GradeLesson" xml:space="preserve">
-    <value>Ränge</value>
-  </data>
-  <data name="MaterialLesson" xml:space="preserve">
-    <value>Materialkunde</value>
-  </data>
-  <data name="OrganisationLesson" xml:space="preserve">
-    <value>Vereinskunde</value>
-  </data>
-  <data name="GradeLessonDescription" xml:space="preserve">
-    <value>Unsere Ränge</value>
-  </data>
-  <data name="MaterialLessonDescription" xml:space="preserve">
-    <value>Unsere Materialien beim Einsatz</value>
-  </data>
-  <data name="OrganisationLessonDescription" xml:space="preserve">
-    <value>Alles über unseren Verein</value>
-  </data>
-  <data name="General" xml:space="preserve">
-    <value>Allgemein</value>
+    <value>N/A</value>
   </data>
 </root>

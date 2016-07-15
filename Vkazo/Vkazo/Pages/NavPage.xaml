@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:theme="clr-namespace:Vkazo.Theme;assembly=Vkazo"
+             xmlns:res="clr-namespace:Vkazo.Resources;assembly=Vkazo"
+             x:Class="Vkazo.Pages.NavPage"
+             Icon="burger.png"
+             Title=" ">
+    <StackLayout Orientation="Vertical" Spacing="0" VerticalOptions="FillAndExpand" Padding="20, 10, 20, 20">
+        <Image x:Name="Logo" Source="warning.png" HeightRequest="200" WidthRequest="Infinity" />
+        <ListView x:Name="NavListView"
+                  HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell ImageSource="{Binding Image}" Text="{Binding Title}"
+                               TextColor="Gray" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

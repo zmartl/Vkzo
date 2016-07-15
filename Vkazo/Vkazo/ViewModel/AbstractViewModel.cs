@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-using Vkazo.Annotations;
+using Vkazo.Properties;
 
 namespace Vkazo.ViewModel
 {

@@ -1,7 +1,14 @@
-﻿namespace Vkazo.Model
+﻿using System.ComponentModel;
+
+namespace Vkazo.Model
 {
     public class Organisation : Base
     {
         public string Image { get; set; }
+        public string Founder { get; set; }
+        public string FoundingYear { get; set; }
+        public string VehicleName { get; set; }
+        public string Email { get; set; }
+        public string Telephone { get; set; }
     }
 }
