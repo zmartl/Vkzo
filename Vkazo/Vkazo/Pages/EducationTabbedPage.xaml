@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:Vkazo.Pages;assembly=Vkazo"
+            xmlns:viewModel="clr-namespace:Vkazo.ViewModel;assembly=Vkazo"
+            xmlns:res="clr-namespace:Vkazo.Resources;assembly=Vkazo"
+            x:Class="Vkazo.Pages.EducationTabbedPage">
+    <TabbedPage.Resources>
+      <ResourceDictionary>
+        <viewModel:MaterialLessonListViewModel x:Key="MaterialLessonListViewModel" />
+        <viewModel:OrganisationLessonListViewModel x:Key="OrganisationLessonListViewModel" />
+        <viewModel:GradeLessonListViewModel x:Key="GradeLessonListViewModel" />
+      </ResourceDictionary>
+    </TabbedPage.Resources>
+    <NavigationPage Title="{x:Static res:AppResources.MaterialLesson}" Icon="burger.png">
+        <x:Arguments>
+            <local:ImageDetailPage BindingContext="{StaticResource MaterialLessonListViewModel}" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="{x:Static res:AppResources.OrganisationLesson}" Icon="organisation.png">
+        <x:Arguments>
+            <local:ImageDetailPage BindingContext="{StaticResource OrganisationLessonListViewModel}" />
+        </x:Arguments>
+    </NavigationPage>
+  <NavigationPage Title="{x:Static res:AppResources.GradeLessonDescription}" Icon="organisation.png">
+    <x:Arguments>
+      <local:ImageDetailPage BindingContext="{StaticResource GradeLessonListViewModel}" />
+    </x:Arguments>
+  </NavigationPage>
+</TabbedPage>

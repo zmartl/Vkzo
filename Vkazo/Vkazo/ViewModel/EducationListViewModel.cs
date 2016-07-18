@@ -35,7 +35,7 @@ namespace Vkazo.ViewModel
             switch (item.Title)
             {
                 case "Materialkunde":
-                    var infoPage = new Pages.ImageDetailPage { BindingContext = new MaterialListViewModel() };
+                    var infoPage = new Pages.ImageDetailPage { BindingContext = new MaterialLessonListViewModel() };
                     navigation.PushAsync(infoPage);
                     break;
                 case "Vereinskunde":

@@ -26,16 +26,19 @@ namespace Vkazo.Pages
             switch (item.Title)
             {
                 case "Einsätze":
-                    await PushAsync(new Pages.ImageDetailPage {BindingContext = new CustomerListViewModel()});
+                    Detail = new NavigationPage(new ImageDetailPage {BindingContext = new CustomerListViewModel()});
                     break;
                 case "Verband":
-                    await PushAsync(new Pages.ImageDetailPage {BindingContext = new AssociationListViewModel()});
+                    Detail = new AssociationTabbedPage();
                     break;
                 case "Ausbildung":
-                    await PushAsync(new Pages.ImageDetailPage { BindingContext = new EducationListViewModel() });
+                    Detail = new EducationTabbedPage();
+                    break;
+                case "Kontakt":
+                    Detail = new NavigationPage(new ImageDetailPage {BindingContext = new ContactListViewModel()});
                     break;
                 default:
-                    await DisplayAlert("Error", "En error occured", "Ok");
+                    await DisplayAlert("Fehler", "Fehler beim Laden der Seite", "OK");
                     break;
             }
             ((ListView) sender).SelectedItem = null;

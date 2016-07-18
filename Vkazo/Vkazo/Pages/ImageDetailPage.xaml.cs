@@ -12,7 +12,7 @@ namespace Vkazo.Pages
             CustomerListView.Footer = string.Empty;
         }
 
-        public void OnSelection(object sender, SelectedItemChangedEventArgs e)
+        private void OnSelection(object sender, SelectedItemChangedEventArgs e)
         {
             if (e.SelectedItem == null || !(BindingContext is IOnItemSelected))
                 return;

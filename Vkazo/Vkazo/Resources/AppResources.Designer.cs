@@ -269,6 +269,15 @@ namespace Vkazo.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Verein.
+        /// </summary>
+        internal static string Organisation {
+            get {
+                return ResourceManager.GetString("Organisation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Vereinskunde.
         /// </summary>
         internal static string OrganisationLesson {
@@ -287,7 +296,7 @@ namespace Vkazo.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verein.
+        ///   Looks up a localized string similar to Vereine.
         /// </summary>
         internal static string Organisations {
             get {
