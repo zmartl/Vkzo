@@ -124,7 +124,7 @@
     <value />
   </data>
   <data name="FlashlampImage" xml:space="preserve">
-    <value />
+    <value>blitzlampe.png</value>
   </data>
   <data name="FoldingTrafficSignal" xml:space="preserve">
     <value>Faltsignal</value>
@@ -133,7 +133,7 @@
     <value />
   </data>
   <data name="FoldingTrafficSignalImage" xml:space="preserve">
-    <value />
+    <value>faltsignal.png</value>
   </data>
   <data name="ScissorLattice" xml:space="preserve">
     <value>Scherengitter</value>
@@ -142,7 +142,7 @@
     <value />
   </data>
   <data name="ScissorLatticeImage" xml:space="preserve">
-    <value />
+    <value>scherengitter.png</value>
   </data>
   <data name="TrafficCone" xml:space="preserve">
     <value>Leitkegel, Tözli</value>
@@ -151,6 +151,6 @@
     <value />
   </data>
   <data name="TrafficConeImage" xml:space="preserve">
-    <value />
+    <value>toetzli.png</value>
   </data>
 </root>

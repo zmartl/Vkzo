@@ -2,9 +2,9 @@
 
 using Xamarin.Forms;
 
-namespace Vkazo
+namespace Vkazo.Pages
 {
-    public partial class CustomerDetailPage : ContentPage
+    public partial class GradeDetailPage : ContentPage
     {
         private Customer _item;
 
@@ -20,7 +20,7 @@ namespace Vkazo
             }
         }
 
-        public CustomerDetailPage()
+        public GradeDetailPage()
         {
             InitializeComponent();
 

@@ -41,7 +41,7 @@ namespace Vkazo.ViewModel
 
         public override void OnSelectedItem(Customer item, INavigation navigation)
         {
-            var detailPage = new Pages.CustomerDetailPage {Item = item};
+            var detailPage = new Pages.GradeDetailPage {Item = item};
             navigation.PushAsync(detailPage);
         }
 

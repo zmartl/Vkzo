@@ -117,6 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Adj" xml:space="preserve">
+    <value>Adj</value>
+  </data>
+  <data name="AdjImage" xml:space="preserve">
+    <value>adjudant.png</value>
+  </data>
+  <data name="AdjLong" xml:space="preserve">
+    <value>Adjudant Stab</value>
+  </data>
   <data name="Asp" xml:space="preserve">
     <value>Asp</value>
   </data>
@@ -130,25 +139,88 @@
     <value>Gfr</value>
   </data>
   <data name="GfrImage" xml:space="preserve">
-    <value />
+    <value>gefreiter.png</value>
   </data>
   <data name="GfrLong" xml:space="preserve">
     <value>Gefreiter</value>
+  </data>
+  <data name="Hptm" xml:space="preserve">
+    <value>Hptm</value>
+  </data>
+  <data name="HptmImage" xml:space="preserve">
+    <value>hauptmann.png</value>
+  </data>
+  <data name="HptmLong" xml:space="preserve">
+    <value>Hautpmann</value>
   </data>
   <data name="Kpl" xml:space="preserve">
     <value>Kpl</value>
   </data>
   <data name="KplImage" xml:space="preserve">
-    <value />
+    <value>korporal.png</value>
   </data>
   <data name="KplLong" xml:space="preserve">
     <value>Korporal</value>
+  </data>
+  <data name="Lt" xml:space="preserve">
+    <value>Lt</value>
+  </data>
+  <data name="LtImage" xml:space="preserve">
+    <value>leutnant.png</value>
+  </data>
+  <data name="LtLong" xml:space="preserve">
+    <value>Leutnant</value>
+  </data>
+  <data name="Maj" xml:space="preserve">
+    <value>Maj</value>
+  </data>
+  <data name="MajImage" xml:space="preserve">
+    <value>major.png</value>
+  </data>
+  <data name="MajLong" xml:space="preserve">
+    <value>Major</value>
+  </data>
+  <data name="Oberst" xml:space="preserve">
+    <value>Oberst</value>
+  </data>
+  <data name="OberstImage" xml:space="preserve">
+    <value>oberst.png</value>
+  </data>
+  <data name="OberstLong" xml:space="preserve">
+    <value>Oberst</value>
+  </data>
+  <data name="Oberstlt" xml:space="preserve">
+    <value>Oberlt</value>
+  </data>
+  <data name="OberstltImage" xml:space="preserve">
+    <value>oberstleutnant.png</value>
+  </data>
+  <data name="OberstltLong" xml:space="preserve">
+    <value>Oberstleutnant</value>
+  </data>
+  <data name="Oblt" xml:space="preserve">
+    <value>Oblt</value>
+  </data>
+  <data name="ObltImage" xml:space="preserve">
+    <value>oberleutnant.png</value>
+  </data>
+  <data name="ObltLong" xml:space="preserve">
+    <value>Oberleutnant</value>
+  </data>
+  <data name="Praesident" xml:space="preserve">
+    <value>Präsident</value>
+  </data>
+  <data name="PraesidentImage" xml:space="preserve">
+    <value>praesident.png</value>
+  </data>
+  <data name="PraesidentLong" xml:space="preserve">
+    <value>Korpskommandant</value>
   </data>
   <data name="Vk" xml:space="preserve">
     <value>Vk</value>
   </data>
   <data name="VkImage" xml:space="preserve">
-    <value />
+    <value>vk.png</value>
   </data>
   <data name="VkLong" xml:space="preserve">
     <value>Verkehrskadett</value>

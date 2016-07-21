@@ -15,7 +15,7 @@ namespace Vkazo.ViewModel
             Title = AppResources.MaterialLesson;
             Items = new ObservableCollection<Customer> {
                 new Customer {
-                    Title = GradeLessonResources.Asp,
+                    Title = GradeLessonResources.AspLong,
                     Description = GradeLessonResources.AspLong,                    
                     Image = GradeLessonResources.AspImage
                 },
@@ -33,6 +33,46 @@ namespace Vkazo.ViewModel
                     Title = GradeLessonResources.Kpl,
                     Description = GradeLessonResources.KplLong,
                     Image = GradeLessonResources.KplImage
+                },
+                new Customer {
+                    Title = GradeLessonResources.Lt,
+                    Description = GradeLessonResources.LtLong,
+                    Image = GradeLessonResources.LtImage
+                },
+                new Customer {
+                    Title = GradeLessonResources.Oblt,
+                    Description = GradeLessonResources.ObltLong,
+                    Image = GradeLessonResources.ObltImage
+                },
+                new Customer {
+                    Title = GradeLessonResources.Hptm,
+                    Description = GradeLessonResources.HptmLong,
+                    Image = GradeLessonResources.HptmImage
+                },
+                new Customer {
+                    Title = GradeLessonResources.Maj,
+                    Description = GradeLessonResources.MajLong,
+                    Image = GradeLessonResources.MajImage
+                },
+                new Customer {
+                    Title = GradeLessonResources.Adj,
+                    Description = GradeLessonResources.AdjLong,
+                    Image = GradeLessonResources.AdjImage
+                },
+                new Customer {
+                    Title = GradeLessonResources.Oberstlt,
+                    Description = GradeLessonResources.OberstltLong,
+                    Image = GradeLessonResources.OberstltImage
+                },
+                new Customer {
+                    Title = GradeLessonResources.Oberst,
+                    Description = GradeLessonResources.OberstLong,
+                    Image = GradeLessonResources.OberstImage
+                },
+                new Customer {
+                    Title = GradeLessonResources.Praesident,
+                    Description = GradeLessonResources.PraesidentLong,
+                    Image = GradeLessonResources.PraesidentImage
                 }
             };
         }
@@ -41,7 +81,7 @@ namespace Vkazo.ViewModel
 
         public override void OnSelectedItem(Customer item, INavigation navigation)
         {
-            var detailPage = new Pages.CustomerDetailPage {Item = item};
+            var detailPage = new Pages.GradeDetailPage {Item = item};
             navigation.PushAsync(detailPage);
         }
 

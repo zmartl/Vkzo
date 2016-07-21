@@ -80,7 +80,7 @@ namespace Vkazo.Resources.Education {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to blitzlampe.png.
         /// </summary>
         internal static string FlashlampImage {
             get {
@@ -107,7 +107,7 @@ namespace Vkazo.Resources.Education {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to faltsignal.png.
         /// </summary>
         internal static string FoldingTrafficSignalImage {
             get {
@@ -134,7 +134,7 @@ namespace Vkazo.Resources.Education {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to scherengitter.png.
         /// </summary>
         internal static string ScissorLatticeImage {
             get {
@@ -161,7 +161,7 @@ namespace Vkazo.Resources.Education {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to toetzli.png.
         /// </summary>
         internal static string TrafficConeImage {
             get {

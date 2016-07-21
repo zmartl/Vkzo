@@ -62,6 +62,33 @@ namespace Vkazo.Resources.Education {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Adj.
+        /// </summary>
+        internal static string Adj {
+            get {
+                return ResourceManager.GetString("Adj", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to adjudant.png.
+        /// </summary>
+        internal static string AdjImage {
+            get {
+                return ResourceManager.GetString("AdjImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Adjudant Stab.
+        /// </summary>
+        internal static string AdjLong {
+            get {
+                return ResourceManager.GetString("AdjLong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Asp.
         /// </summary>
         internal static string Asp {
@@ -98,7 +125,7 @@ namespace Vkazo.Resources.Education {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to gefreiter.png.
         /// </summary>
         internal static string GfrImage {
             get {
@@ -116,6 +143,33 @@ namespace Vkazo.Resources.Education {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Hptm.
+        /// </summary>
+        internal static string Hptm {
+            get {
+                return ResourceManager.GetString("Hptm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hauptmann.png.
+        /// </summary>
+        internal static string HptmImage {
+            get {
+                return ResourceManager.GetString("HptmImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hautpmann.
+        /// </summary>
+        internal static string HptmLong {
+            get {
+                return ResourceManager.GetString("HptmLong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Kpl.
         /// </summary>
         internal static string Kpl {
@@ -125,7 +179,7 @@ namespace Vkazo.Resources.Education {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to korporal.png.
         /// </summary>
         internal static string KplImage {
             get {
@@ -143,6 +197,168 @@ namespace Vkazo.Resources.Education {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Lt.
+        /// </summary>
+        internal static string Lt {
+            get {
+                return ResourceManager.GetString("Lt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to leutnant.png.
+        /// </summary>
+        internal static string LtImage {
+            get {
+                return ResourceManager.GetString("LtImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Leutnant.
+        /// </summary>
+        internal static string LtLong {
+            get {
+                return ResourceManager.GetString("LtLong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maj.
+        /// </summary>
+        internal static string Maj {
+            get {
+                return ResourceManager.GetString("Maj", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to major.png.
+        /// </summary>
+        internal static string MajImage {
+            get {
+                return ResourceManager.GetString("MajImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Major.
+        /// </summary>
+        internal static string MajLong {
+            get {
+                return ResourceManager.GetString("MajLong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oberst.
+        /// </summary>
+        internal static string Oberst {
+            get {
+                return ResourceManager.GetString("Oberst", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to oberst.png.
+        /// </summary>
+        internal static string OberstImage {
+            get {
+                return ResourceManager.GetString("OberstImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oberst.
+        /// </summary>
+        internal static string OberstLong {
+            get {
+                return ResourceManager.GetString("OberstLong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oberlt.
+        /// </summary>
+        internal static string Oberstlt {
+            get {
+                return ResourceManager.GetString("Oberstlt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to oberstleutnant.png.
+        /// </summary>
+        internal static string OberstltImage {
+            get {
+                return ResourceManager.GetString("OberstltImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oberstleutnant.
+        /// </summary>
+        internal static string OberstltLong {
+            get {
+                return ResourceManager.GetString("OberstltLong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oblt.
+        /// </summary>
+        internal static string Oblt {
+            get {
+                return ResourceManager.GetString("Oblt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to oberleutnant.png.
+        /// </summary>
+        internal static string ObltImage {
+            get {
+                return ResourceManager.GetString("ObltImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oberleutnant.
+        /// </summary>
+        internal static string ObltLong {
+            get {
+                return ResourceManager.GetString("ObltLong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Präsident.
+        /// </summary>
+        internal static string Praesident {
+            get {
+                return ResourceManager.GetString("Praesident", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to praesident.png.
+        /// </summary>
+        internal static string PraesidentImage {
+            get {
+                return ResourceManager.GetString("PraesidentImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Korpskommandant.
+        /// </summary>
+        internal static string PraesidentLong {
+            get {
+                return ResourceManager.GetString("PraesidentLong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Vk.
         /// </summary>
         internal static string Vk {
@@ -152,7 +368,7 @@ namespace Vkazo.Resources.Education {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to vk.png.
         /// </summary>
         internal static string VkImage {
             get {
