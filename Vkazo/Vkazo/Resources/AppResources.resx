@@ -145,7 +145,7 @@
     <value>Die VKZO rockt den Ring</value>
   </data>
   <data name="ImageHinwilBadi" xml:space="preserve">
-    <value>badi.png</value>
+    <value>badihinwil.png</value>
   </data>
   <data name="ImageLiveAtSunset" xml:space="preserve">
     <value>liveatsunset.png</value>
@@ -180,8 +180,8 @@
   <data name="FoundingYear" xml:space="preserve">
     <value>Gegründet</value>
   </data>
-  <data name="VehicleName" xml:space="preserve">
-    <value>Fahrzeugname</value>
+  <data name="Nickname" xml:space="preserve">
+    <value>Rufname</value>
   </data>
   <data name="Email" xml:space="preserve">
     <value>Email</value>

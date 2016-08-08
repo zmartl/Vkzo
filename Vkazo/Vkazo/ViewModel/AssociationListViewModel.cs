@@ -30,7 +30,7 @@ namespace Vkazo.ViewModel
                     navigation.PushAsync(infoPage);
                     break;
                 case "Vereine":
-                    var organisationPage = new Pages.ImageDetailPage {BindingContext = new OrganisationListViewModel()};
+                    var organisationPage = new Pages.OrganisationOverviewPage();
                     navigation.PushAsync(organisationPage);
                     break;
                 

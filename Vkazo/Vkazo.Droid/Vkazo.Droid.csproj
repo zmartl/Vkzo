@@ -268,9 +268,6 @@
     <AndroidResource Include="Resources\drawable\leutnant.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\liveatsunset_gross.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\major.png" />
   </ItemGroup>
   <ItemGroup>
@@ -307,9 +304,6 @@
     <AndroidResource Include="Resources\drawable-hdpi\liveatsunset.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\liveatsunset_gross.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\scherengitter.png" />
   </ItemGroup>
   <ItemGroup>
@@ -325,9 +319,6 @@
     <AndroidResource Include="Resources\drawable-xhdpi\liveatsunset.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\liveatsunset_gross.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable-xhdpi\scherengitter.png" />
   </ItemGroup>
   <ItemGroup>
@@ -341,9 +332,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xxhdpi\liveatsunset.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\liveatsunset_gross.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xxhdpi\scherengitter.png" />

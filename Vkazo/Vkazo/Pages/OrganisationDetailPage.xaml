@@ -25,12 +25,13 @@
                 <Label Text="{Binding Item.Founder}" />
                 <Label Text="{x:Static res:AppResources.FoundingYear}" TextColor="{x:Static theme:Colors.Orange}" FontSize="Medium" />
                 <Label Text="{Binding Item.FoundingYear}" />
-                <Label Text="{x:Static res:AppResources.VehicleName}" TextColor="{x:Static theme:Colors.Orange}" FontSize="Medium" />
-                <Label Text="{Binding Item.VehicleName}" />
+                <Label Text="{x:Static res:AppResources.Nickname}" TextColor="{x:Static theme:Colors.Orange}" FontSize="Medium" />
+                <Label Text="{Binding Item.Nickname}" />
               <Label Text="{x:Static res:AppResources.Email}" TextColor="{x:Static theme:Colors.Orange}" FontSize="Medium" />
               <Label Text="{Binding Item.Email}" />
               <Label Text="{x:Static res:AppResources.Telephone}" TextColor="{x:Static theme:Colors.Orange}" FontSize="Medium" />
-              <Label Text="{Binding Item.Telephone}" />
+              <Label Text="{Binding Item.Telephonenumber}" />
+              <Label Text="Quelle: wikipedia.org" FontSize="Small" HorizontalTextAlignment="End" />
             </StackLayout>
         </StackLayout>
     </ScrollView>

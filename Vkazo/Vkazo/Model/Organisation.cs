@@ -7,8 +7,8 @@ namespace Vkazo.Model
         public string Image { get; set; }
         public string Founder { get; set; }
         public string FoundingYear { get; set; }
-        public string VehicleName { get; set; }
+        public string Nickname { get; set; }
         public string Email { get; set; }
-        public string Telephone { get; set; }
+        public string Telephonenumber { get; set; }
     }
 }

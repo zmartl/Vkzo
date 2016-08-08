@@ -8,7 +8,6 @@
             x:Class="Vkazo.Pages.AssociationTabbedPage">
     <TabbedPage.Resources>
       <ResourceDictionary>
-        <viewModel:OrganisationListViewModel x:Key="OrganisationListViewModel" />
         <viewModel:AssociationInfoListViewModel x:Key="AssociationInfoListViewModel" />
       </ResourceDictionary>
     </TabbedPage.Resources>
@@ -19,7 +18,7 @@
     </NavigationPage>
     <NavigationPage Title="{x:Static res:AppResources.Organisations}" Icon="organisation.png">
         <x:Arguments>
-            <local:ImageDetailPage BindingContext="{StaticResource OrganisationListViewModel}" />
+            <local:OrganisationOverviewPage />
         </x:Arguments>
     </NavigationPage>
 </TabbedPage>

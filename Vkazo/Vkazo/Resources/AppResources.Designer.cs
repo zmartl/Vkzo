@@ -197,7 +197,7 @@ namespace Vkazo.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to badi.png.
+        ///   Looks up a localized string similar to badihinwil.png.
         /// </summary>
         internal static string ImageHinwilBadi {
             get {
@@ -269,6 +269,15 @@ namespace Vkazo.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Rufname.
+        /// </summary>
+        internal static string Nickname {
+            get {
+                return ResourceManager.GetString("Nickname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Verein.
         /// </summary>
         internal static string Organisation {
@@ -319,15 +328,6 @@ namespace Vkazo.Resources {
         internal static string UnsereEinsaetze {
             get {
                 return ResourceManager.GetString("UnsereEinsaetze", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Fahrzeugname.
-        /// </summary>
-        internal static string VehicleName {
-            get {
-                return ResourceManager.GetString("VehicleName", resourceCulture);
             }
         }
         

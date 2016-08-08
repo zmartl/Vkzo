@@ -19,6 +19,7 @@ namespace Vkazo.Pages
     {
         private const string FOLDERNAME = "Vkazo";
         private const string FILENAME = "VkzoHomePage.txt";
+        private const string URL = "https://luca-marti.ch/app/program.php";
         private IFile _localFile;
         private IFolder _localFolder;
         private ObservableCollection<Program> _programList;
@@ -54,18 +55,16 @@ namespace Vkazo.Pages
             //remove ! if not behind proxy
             if (CrossConnectivity.Current.IsConnected)
             {
-                // Uncomment when not behind proxy
-                //const string URL = "https://luca-marti.ch/app/program.php";
-                //var client = new HttpClient();
-                //result = await client.GetStringAsync(URL);
+                // Uncomment when not behind proxy              
+                // var client = new HttpClient();
+                // result = await client.GetStringAsync(URL);
 
                 var folder = await rootFolder.CreateFolderAsync(FOLDERNAME, CreationCollisionOption.OpenIfExists);
 
                 var file = await folder.CreateFileAsync(FILENAME, CreationCollisionOption.ReplaceExisting);
 
-                // Uncomment when behind proxy
-                result =
-                    "[{\"Date\": \"01.07.2016\", \"Title\": \"Hauptsitz Flughafen ZÃ¼rich AG\",},  {\"Date\": \"02.07.2016\",\"Title\": \"Hauptsitz Flughafen ZÃ¼rich AG\",},{\"Date\": \"03.07.2016\",\"Title\": \"ZÃ¼rich Zoo\",}]";
+                // Comment when not behind proxy
+                result = "[{\"Date\": \"01.07.2016\", \"Title\": \"Hauptsitz Flughafen Zürich AG\",},  {\"Date\": \"02.07.2016\",\"Title\": \"Hauptsitz Flughafen Zürich AG\",},{\"Date\": \"03.07.2016\",\"Title\": \"Zürich Zoo\",}]";
 
                 if (result == "")
                 {
@@ -78,7 +77,7 @@ namespace Vkazo.Pages
             {
                 _localFolder = await rootFolder.GetFolderAsync(FOLDERNAME);
                 _localFile = await _localFolder.GetFileAsync(FILENAME);
-                //result = await _localFile.ReadAllTextAsync();
+                result = await _localFile.ReadAllTextAsync();
 
                 if (result == "")
                 {
