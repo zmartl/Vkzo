@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+
+using HockeyApp.iOS;
+
 using UIKit;
 
 namespace Vkazo.iOS
@@ -22,6 +25,10 @@ namespace Vkazo.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            var manager = BITHockeyManager.SharedHockeyManager;
+            manager.Configure("1a37585fc2a84f0d9ecc019abb65cfcd");
+            manager.StartManager();
+
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 

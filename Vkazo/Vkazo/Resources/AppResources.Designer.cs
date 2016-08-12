@@ -197,6 +197,15 @@ namespace Vkazo.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Home.
+        /// </summary>
+        internal static string Home {
+            get {
+                return ResourceManager.GetString("Home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to badihinwil.png.
         /// </summary>
         internal static string ImageHinwilBadi {

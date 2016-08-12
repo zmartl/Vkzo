@@ -62,7 +62,7 @@ namespace Vkazo.Resources.Contact {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Niiiiicht.
+        ///   Looks up a localized string similar to Text.
         /// </summary>
         internal static string BecomeDriverDesc {
             get {
@@ -80,7 +80,7 @@ namespace Vkazo.Resources.Contact {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Niiiiicht.
+        ///   Looks up a localized string similar to Text.
         /// </summary>
         internal static string BecomeVkDesc {
             get {

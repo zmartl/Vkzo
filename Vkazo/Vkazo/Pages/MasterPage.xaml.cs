@@ -25,6 +25,9 @@ namespace Vkazo.Pages
 
             switch (item.Title)
             {
+                case "Home":
+                    Detail = new NavigationPage(new HomePage());
+                    break;
                 case "Einsätze":
                     Detail = new NavigationPage(new ImageDetailPage {BindingContext = new CustomerListViewModel()});
                     break;

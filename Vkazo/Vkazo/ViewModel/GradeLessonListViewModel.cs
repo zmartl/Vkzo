@@ -12,7 +12,7 @@ namespace Vkazo.ViewModel
     {
         public GradeLessonListViewModel()
         {
-            Title = AppResources.MaterialLesson;
+            Title = AppResources.GradeLesson;
             Items = new ObservableCollection<Customer> {
                 new Customer {
                     Title = GradeLessonResources.AspLong,

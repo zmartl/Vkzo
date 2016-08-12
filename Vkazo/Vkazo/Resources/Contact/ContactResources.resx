@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BecomeDriverDesc" xml:space="preserve">
-    <value>Niiiiicht</value>
+    <value>Text</value>
   </data>
   <data name="BecomeDriverTitle" xml:space="preserve">
     <value>So wirst du ein Fahrer für die Vkazo!</value>
   </data>
   <data name="BecomeVkDesc" xml:space="preserve">
-    <value>Niiiiicht</value>
+    <value>Text</value>
   </data>
   <data name="BecomeVkTitle" xml:space="preserve">
     <value>So wirst du ein Verkehrskadett!</value>

@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Net.Http;
 using System.Runtime.CompilerServices;
 
 using Newtonsoft.Json;
@@ -56,14 +57,11 @@ namespace Vkazo.Pages
             if (CrossConnectivity.Current.IsConnected)
             {
                 // Uncomment when not behind proxy              
-                // var client = new HttpClient();
-                // result = await client.GetStringAsync(URL);
+                 var client = new HttpClient();
+                 result = await client.GetStringAsync(URL);
                 var folder = await rootFolder.CreateFolderAsync(FOLDERNAME, CreationCollisionOption.OpenIfExists);
 
                 var file = await folder.CreateFileAsync(FILENAME, CreationCollisionOption.ReplaceExisting);
-
-                //comment when not behind proxy
-                result = "[{\"Title\":\"VKAZO\",\"Image\":\"icon.png\",\"Description\":\"Verkehrskadetten Zürcher Oberland\",\"Founder\":\"Heinrich Guggenbühl\",\"FoundingYear\":\"1967\",\"Nickname\":\"Regula\",\"Email\":\"einsatz.info@vkazo.ch\",\"Telephonenumber\":\"079 693 50 56\"}]";
 
                 if (result == "")
                 {

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Net.Http;
 using System.Runtime.CompilerServices;
 
 using Newtonsoft.Json;
@@ -56,17 +57,14 @@ namespace Vkazo.Pages
             if (CrossConnectivity.Current.IsConnected)
             {
                 // Uncomment when not behind proxy              
-                // var client = new HttpClient();
-                // result = await client.GetStringAsync(URL);
+                 var client = new HttpClient();
+                result = await client.GetStringAsync(URL);
 
                 var folder = await rootFolder.CreateFolderAsync(FOLDERNAME, CreationCollisionOption.OpenIfExists);
 
                 var file = await folder.CreateFileAsync(FILENAME, CreationCollisionOption.ReplaceExisting);
 
-                // Comment when not behind proxy
-                result = "[{\"Date\": \"01.07.2016\", \"Title\": \"Hauptsitz Flughafen Zürich AG\",},  {\"Date\": \"02.07.2016\",\"Title\": \"Hauptsitz Flughafen Zürich AG\",},{\"Date\": \"03.07.2016\",\"Title\": \"Zürich Zoo\",}]";
-
-                if (result == "")
+               if (result == "")
                 {
                     result = "[{\"Date\": \"Keine Daten vorhanden\"}]";
                 }
