@@ -12,7 +12,7 @@
             <ListView x:Name="MainListView" ItemsSource="{Binding ProgramList}" HasUnevenRows="True" ItemSelected="OnSelection">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Date}" Detail="{Binding Title}" />
+                        <TextCell Text="{Binding Date}" Detail="{Binding Description}" />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
