@@ -4,7 +4,7 @@ The offical Android and iOS App from the Verkehrskadetten Zürcher Oberland
 
 ## Technology
 I've used Xamarin Forms to develop this app. 
-The shared code is in the main project folder. The plattform-specific code you can find in die .Droid or .iOS project. 
+The shared code is in the main project folder. The plattform-specific code you can find in die .Droid or .iOS project. (UWP is included, will removed later)
 
 ## Version
 0.1
