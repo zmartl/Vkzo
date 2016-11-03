@@ -1,33 +1,32 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.Net.Http;
 using System.Runtime.CompilerServices;
-
 using Newtonsoft.Json;
-
 using PCLStorage;
 using PCLStorage.Exceptions;
-
 using Plugin.Connectivity;
-
 using Vkazo.Model;
-using Vkazo.ViewModel;
-
 using Xamarin.Forms;
 
 namespace Vkazo.Pages
 {
     public partial class OrganisationOverviewPage : ContentPage, INotifyPropertyChanged
     {
-        private const string FOLDERNAME = "Vkazo";
-        private const string FILENAME = "VkzoOrganisationPage.txt";
-        private const string URL = "https://luca-marti.ch/app/organisation.php";
+        private const string Foldername = "Vkazo";
+        private const string Filename = "VkzoOrganisationPage.txt";
+        private const string Url = "https://luca-marti.ch/app/organisation.php";
         private IFile _localFile;
         private IFolder _localFolder;
         private ObservableCollection<Organisation> _organisationList;
-        public new event PropertyChangedEventHandler PropertyChanged = delegate { };
+
+        public OrganisationOverviewPage()
+        {
+            InitializeComponent();
+            BindingContext = this;
+            OrganisationList = new ObservableCollection<Organisation>();
+        }
 
         public ObservableCollection<Organisation> OrganisationList
         {
@@ -39,13 +38,7 @@ namespace Vkazo.Pages
             }
         }
 
-        public OrganisationOverviewPage()
-        {
-            InitializeComponent();
-            BindingContext = this;
-            OrganisationList = new ObservableCollection<Organisation>();
-            CustomerListView.Footer = string.Empty;
-        }
+        public new event PropertyChangedEventHandler PropertyChanged = delegate { };
 
         protected override async void OnAppearing()
         {
@@ -57,16 +50,14 @@ namespace Vkazo.Pages
             if (CrossConnectivity.Current.IsConnected)
             {
                 // Uncomment when not behind proxy              
-                 var client = new HttpClient();
-                 result = await client.GetStringAsync(URL);
-                var folder = await rootFolder.CreateFolderAsync(FOLDERNAME, CreationCollisionOption.OpenIfExists);
+                var client = new HttpClient();
+                result = await client.GetStringAsync(Url);
+                var folder = await rootFolder.CreateFolderAsync(Foldername, CreationCollisionOption.OpenIfExists);
 
-                var file = await folder.CreateFileAsync(FILENAME, CreationCollisionOption.ReplaceExisting);
+                var file = await folder.CreateFileAsync(Filename, CreationCollisionOption.ReplaceExisting);
 
                 if (result == "")
-                {
                     result = "[{\"Title\": \"Keine Daten vorhanden\"}]";
-                }
 
                 await file.WriteAllTextAsync(result);
             }
@@ -74,23 +65,21 @@ namespace Vkazo.Pages
             {
                 try
                 {
-                    _localFolder = await rootFolder.GetFolderAsync(FOLDERNAME);
-                    _localFile = await _localFolder.GetFileAsync(FILENAME);
+                    _localFolder = await rootFolder.GetFolderAsync(Foldername);
+                    _localFile = await _localFolder.GetFileAsync(Filename);
                     result = await _localFile.ReadAllTextAsync();
 
                     if (string.IsNullOrEmpty(result))
-                    {
                         throw new FileNotFoundException("result is empty");
-                    }
                 }
                 catch (FileNotFoundException e)
                 {
-                    DisplayAlert("Keine Netzwerkverbindung", "Die Daten konnten nicht geladen werden", "Ok");
+                    await DisplayAlert("Keine Netzwerkverbindung", "Die Daten konnten nicht geladen werden", "Ok");
                     result = "[{\"Date\": \"Die Daten konten nicht geladen werden\"}]";
-                }                        
-                
+                }
             }
-            OrganisationList = new ObservableCollection<Organisation>(JsonConvert.DeserializeObject<IEnumerable<Organisation>>(result));
+            OrganisationList =
+                new ObservableCollection<Organisation>(JsonConvert.DeserializeObject<IEnumerable<Organisation>>(result));
         }
 
         private void OnSelection(object sender, SelectedItemChangedEventArgs e)

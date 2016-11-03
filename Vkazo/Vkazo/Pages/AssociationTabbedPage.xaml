@@ -17,8 +17,8 @@
         </x:Arguments>
     </NavigationPage>
     <NavigationPage Title="{x:Static res:AppResources.Organisations}" Icon="organisation.png">
-        <x:Arguments>
-            <local:OrganisationOverviewPage />
-        </x:Arguments>
+      <x:Arguments>          
+          <local:OrganisationOverviewPage />
+      </x:Arguments>-->
     </NavigationPage>
 </TabbedPage>

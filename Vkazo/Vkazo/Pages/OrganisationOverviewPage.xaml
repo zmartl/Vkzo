@@ -5,7 +5,7 @@
              xmlns:theme="clr-namespace:Vkazo.Theme;assembly=Vkazo"
              xmlns:res="clr-namespace:Vkazo.Resources;assembly=Vkazo"
              x:Class="Vkazo.Pages.OrganisationOverviewPage"
-             Title="{Binding Shortcut}">
+             Title="{x:Static res:AppResources.Organisations}">
     <ListView x:Name="CustomerListView"
               HasUnevenRows="True" ItemSelected="OnSelection" ItemsSource="{Binding OrganisationList}">
         <ListView.ItemTemplate>
