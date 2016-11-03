@@ -3,27 +3,30 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Net.Http;
 using System.Runtime.CompilerServices;
-
 using Newtonsoft.Json;
-
 using PCLStorage;
-
 using Plugin.Connectivity;
-
 using Vkazo.Model;
-
 using Xamarin.Forms;
 
 namespace Vkazo.Pages
 {
     public partial class HomePage : ContentPage, INotifyPropertyChanged
     {
-        private const string FOLDERNAME = "Vkazo";
-        private const string FILENAME = "VkzoHomePage.txt";
-        private const string URL = "https://luca-marti.ch/app/program.php";
+        private const string Foldername = "Vkazo";
+        private const string Filename = "VkzoHomePage.txt";
+        private const string Url = "https://luca-marti.ch/app/program.php";
         private IFile _localFile;
         private IFolder _localFolder;
         private ObservableCollection<Program> _programList;
+
+        public HomePage()
+        {
+            InitializeComponent();
+            BindingContext = this;
+            ProgramList = new ObservableCollection<Program>();
+            MainListView.Footer = string.Empty;
+        }
 
         public ObservableCollection<Program> ProgramList
         {
@@ -33,14 +36,6 @@ namespace Vkazo.Pages
                 _programList = value;
                 RaisePropertyChanged();
             }
-        }
-
-        public HomePage()
-        {
-            InitializeComponent();
-            BindingContext = this;
-            ProgramList = new ObservableCollection<Program>();
-            MainListView.Footer = string.Empty;
         }
 
         #region Overrides of Page
@@ -57,24 +52,22 @@ namespace Vkazo.Pages
             if (CrossConnectivity.Current.IsConnected)
             {
                 // Uncomment when not behind proxy              
-                 var client = new HttpClient();
-                result = await client.GetStringAsync(URL);
+                var client = new HttpClient();
+                result = await client.GetStringAsync(Url);
 
-                var folder = await rootFolder.CreateFolderAsync(FOLDERNAME, CreationCollisionOption.OpenIfExists);
+                var folder = await rootFolder.CreateFolderAsync(Foldername, CreationCollisionOption.OpenIfExists);
 
-                var file = await folder.CreateFileAsync(FILENAME, CreationCollisionOption.ReplaceExisting);
+                var file = await folder.CreateFileAsync(Filename, CreationCollisionOption.ReplaceExisting);
 
-               if (result == "")
-                {
+                if (result == "")
                     result = "[{\"Date\": \"Keine Daten vorhanden\"}]";
-                }
 
                 await file.WriteAllTextAsync(result);
             }
             else
             {
-                _localFolder = await rootFolder.GetFolderAsync(FOLDERNAME);
-                _localFile = await _localFolder.GetFileAsync(FILENAME);
+                _localFolder = await rootFolder.GetFolderAsync(Foldername);
+                _localFile = await _localFolder.GetFileAsync(Filename);
                 result = await _localFile.ReadAllTextAsync();
 
                 if (result == "")
